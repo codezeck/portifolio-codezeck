@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="src/assets/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style/navigation.css" />
+    <link rel="stylesheet" href="src/style/home.css">
+    <link rel="stylesheet" href="src/style/about-me.css">
+    <title>Codezeck</title>
+  </head>
+  <body>
+    <section class="container">
+      <section class="container-navigation">
+        <div class="logo-codezeck">
+            <a href="index.html">
+            <img src="src/assets/favicon.png" alt="logotipo" />
+            <span>Codezeck</span>
+            </a>
+        </div>
+        <button id="menu-toggle"><img src="src/assets/menu.png" alt="botão-menu" onclick="btnMenu()"></button>
+        <div class="tab-buttons hidden">
+          <button class="home-btn" content-id="home">
+            Home
+            </button>
+          <button class="sobre-mim-btn" content-id="sobre-mim">
+            Sobre mim
+          </button>
+          <button class="habilidades-btn" content-id="habilidades">
+            Habilidades
+          </button>
+          <button class="hortifolio-btn" content-id="portifolio">
+            Portifólio
+          </button>
+          <button class="contato-btn" content-id="contato">
+            Contato
+        </button>
+        </div>
+      </section>
+      <section class="contents">
+
+        <!-- sessão home -->
+
+        <div id="home">
+          <div class="main">
+            <h1>EZEQUIEL SILVA</h1>
+            <h2><strong>Desenvolvedor Front-end</strong></h2>
+            <p>
+              Olá, seja bem-vindo! Sou desenvolvedor front-end tenho 23 anos,
+              especializado na criação de sites e templates para web. Estou
+              empolgado para ajudar você a idealizar e construir seu site. O
+              download do meu currículo está logo abaixo.
+            </p>
+            <div class="links-redes">
+              <span
+                ><a href="https://www.linkedin.com/in/codezeck/" target="_blank"
+                  ><img
+                    src="src/assets/logo-linkedin.png"
+                    alt="logo-linkedin" /></a
+              ></span>
+              <span
+                ><a
+                  href="mailto:ezequieldasilvamanco18@gmail.com"
+                  target="_blank"
+                  ><img src="src/assets/logo-email.png" alt="logo-email" /></a
+              ></span>
+              <span
+                ><a href="https://github.com/codezeck" target="_blank"
+                  ><img src="src/assets/logo-github.png" alt="logo-github" /></a
+              ></span>
+            </div>
+            <button>
+              <a
+                href="src/download/curriculo-Ezequiel.pdf"
+                download="Curriculo_Ezequiel_Silva.pdf"
+                >Download CV</a
+              >
+            </button>
+          </div>
+          <section class="img-avatar">
+            <img src="src/assets/avatar.png" alt="meu avatar" />
+            <div class="sombra"></div>
+          </section>
+        </div>
+
+        <!-- sessão sobre mim -->
+
+        <div id="about-me">
+            <div class="container-foto">
+              <section class="foto">
+                <img src="src/assets/selfie.jpg" alt="minha-foto" />
+              </section>
+            </div>
+            <div class="container-conteudo">
+              <h1>Sobre <span>mim</span></h1>
+              <p>
+                Sou Ezequiel, desenvolvedor front-end com especialidade em HTML,
+                CSS e experiência prática em JavaScript e React. Concluí
+                diversos cursos na Udemy, que me forneceram uma base sólida para
+                desenvolvimento web e projetos interativos.
+              </p>
+              <p>
+                Atualmente, estou cursando Análise e Desenvolvimento de Sistemas
+                e também estou aprimorando meus conhecimentos na Udemy. Continuo
+                adquirindo novas competências e expandindo minhas habilidades.
+              </p>
+              <p>
+                Sou apaixonado por aprendizado contínuo e estou sempre em busca
+                de novos desafios para evoluir e contribuir com projetos
+                impactantes no mercado de tecnologia.
+              </p>
+              <button>
+                <a href="../pages/contact.html">Contato</a>
+              </button>
+            </div>
+        </div>
+
+        <!-- sessão skills -->
+
+        <div id="habilidades">
+            <section class="grid-container">
+                <h1>Habilidades</h1>
+                <p><strong>Aqui estão minhas competências:</strong> As que têm um ponto de interrogação ainda não foram desbloqueadas. Estou constantemente evoluindo e aprimorando minhas habilidades para oferecer o melhor suporte possível.</p>
+                <div class="grid-skills">
+                  <div class="skills-1" title="HTML5">
+                    <img class="desbloqueado" src="../assets/icon-skills/html5-original.svg" alt="logo-HTML5">
+                  </div>
+                  <div class="skills-2" title="CSS3">
+                    <img class="desbloqueado" src="../assets/icon-skills/css3-original.svg" alt="logo-CSS3">
+                  </div>
+                  <div class="skills-3" title="JavaScript">
+                    <img class="desbloqueado" src="../assets/icon-skills/javascript-original.svg" alt="logo-JavaScript" >
+                  </div>
+                  <div class="skills-4" title="TypeScript">
+                    <img class="desbloqueado" src="../assets/icon-skills/typescript-original.svg" alt="logo-TypeScript" >
+                  </div>
+                  <div class="skills-5" title="React">
+                    <img class="desbloqueado" src="../assets/icon-skills/react-original.svg" alt="logo-react">
+                  </div>
+                  <div class="skills-6" title="mySQL">
+                    <img class="desbloqueado" src="../assets/icon-skills/mysql-original.svg" alt="logo-mySQL" >
+                  </div>
+                  <div class="skills-7" title="NodeJS">
+                    <img class="desbloqueado" src="../assets/icon-skills/nodejs-original.svg" alt="logo-NodeJS" >
+                  </div>
+                  <div class="skills-8" title="Em breve...">
+                    <img class="bloqueado" src="../assets/interrogacao.png" alt="Em breve..." >
+                  </div>
+                  <div class="skills-9" title="Em breve...">
+                    <img class="bloqueado" src="../assets/interrogacao.png" alt="Em breve..." >
+                  </div>
+                  <div class="skills-10" title="Em breve...">
+                    <img class="bloqueado" src="../assets/interrogacao.png" alt="Em breve..." >
+                  </div>
+                  <div class="skills-11" title="Em breve...">
+                    <img class="bloqueado" src="../assets/interrogacao.png" alt="Em breve..." >
+                  </div>
+                  <div class="skills-12" title="Em breve...">
+                    <img class="bloqueado" src="../assets/interrogacao.png" alt="Em breve..." >
+                  </div>
+                  <div class="skills-13" title="Em breve...">
+                    <img class="bloqueado" src="../assets/interrogacao.png" alt="Em breve..." >
+                  </div>
+                  <div class="skills-14" title="Em breve...">
+                    <img class="bloqueado" src="../assets/interrogacao.png" alt="Em breve..." >
+                  </div>
+                  <div class="skills-15" title="Em breve...">
+                    <img class="bloqueado" src="../assets/interrogacao.png" alt="Em breve..." >
+                  </div>
+                  <div class="skills-16" title="Em breve...">
+                    <img class="bloqueado" src="../assets/interrogacao.png" alt="Em breve..." >
+                  </div>
+                  <div class="skills-17" title="Em breve...">
+                    <img class="bloqueado" src="../assets/interrogacao.png" alt="Em breve..." >
+                  </div>
+                  <div class="skills-18" title="Em breve...">
+                    <img class="bloqueado" src="../assets/interrogacao.png" alt="Em breve..." >
+                  </div>
+                  <div class="skills-19" title="Em breve...">
+                    <img class="bloqueado" src="../assets/interrogacao.png" alt="Em breve..." >
+                  </div>
+                  <div class="skills-20" title="Em breve...">
+                    <img class="bloqueado" src="../assets/interrogacao.png" alt="Em breve..." >
+                  </div>
+                  <div class="skills-21" title="Em breve...">
+                    <img class="bloqueado" src="../assets/interrogacao.png" alt="Em breve..." >
+                  </div>
+                  <div class="skills-22" title="Em breve...">
+                    <img class="bloqueado" src="../assets/interrogacao.png" alt="Em breve..." >
+                  </div>
+                  <div class="skills-23" title="Em breve...">
+                    <img class="bloqueado" src="../assets/interrogacao.png" alt="Em breve..." >
+                  </div>
+                  <div class="skills-24" title="Em breve...">
+                    <img class="bloqueado" src="../assets/interrogacao.png" alt="Em breve..." >
+                  </div>
+                  <div class="skills-25" title="Em breve...">
+                    <img class="bloqueado" src="../assets/interrogacao.png" alt="Em breve..." >
+                  </div>
+                </div>
+              </section>
+        </div>
+        
+        <!-- sessão portifólio -->
+
+        <div id="portifolio">
+            <section class="container-portifolio">
+                <h1>Portifólio</h1>
+                <p>Aqui estão alguns dos meus trabalhos. Abaixo, você encontrará o link de cada projeto. Ao passar o mouse sobre um projeto, aparecerá uma breve descrição sobre ele. Se clicar no projeto, você será direcionado para o respectivo site.</p>
+                <section class="container-projetos">
+                  <div class="projeto-1 desbloqueado" title="O projeto Menu Restaurante é uma plataforma online onde os clientes podem explorar o cardápio do restaurante e realizar pedidos diretamente pelo site. Após finalizar o pedido, o cliente é automaticamente redirecionado para o WhatsApp, onde pode concluir a solicitação. Além disso, o site possui um sistema que exibe o horário de funcionamento do restaurante, permitindo que pedidos sejam feitos apenas dentro do horário de atendimento.">
+                    <a href="https://restaurant-menu-rouge-ten.vercel.app" target="_blank">
+                      <img src="../assets/img-sites/menu-restaurante.png" alt="ilustração projeto restaurante menu">
+                    </a>
+                  </div>
+                  <div class="projeto-2 desbloqueado" title="O site Site Android descreve a história do logo do Android e como surgiram os nomes das versões do sistema operacional. Além disso, o site fala sobre a criadora dos nomes das versões, destacando as curiosidades e o processo criativo por trás de cada nome.">
+                    <a href="https://codezeck.github.io/site-android/" target="_blank">
+                      <img src="../assets/img-sites/site-android.png" alt="ilustração projeto site Android">
+                    </a>
+                  </div>
+                  <div class="projeto-3 desbloqueado" title="O projeto é uma cópia funcional do Spotify, com uma interface de usuário atrativa e responsiva. Inclui a função de pesquisa de músicas através de uma API personalizada, proporcionando uma experiência de usuário dinâmica e interativa. O resultado é uma plataforma completa e funcional de streaming de música.">
+                    <a href="https://codezeck.github.io/Clone-spotfy/" target="_blank">
+                      <img src="../assets/img-sites/clone-spotify.png" alt="ilustração projeto restaurante menu">
+                    </a>
+                  </div>
+                  <div class="projeto-4 bloqueado" title="Em breve...">
+                    <a href="">
+                      <img src="../assets/interrogacao.png" alt="Em breve...">
+                    </a>
+                  </div>
+                  <div class="projeto-5 bloqueado" title="Em breve...">
+                    <a href="">
+                      <img src="../assets/interrogacao.png" alt="Em breve...">
+                    </a>
+                  </div>
+                  <div class="projeto-6 bloqueado" title="Em breve...">
+                    <a href="">
+                      <img src="../assets/interrogacao.png" alt="Em breve...">
+                    </a>
+                  </div>
+                </section>
+              </section>
+        </div>
+
+        <!-- sessão contato -->
+
+        <div id="contato">
+            <section class="sessao-contato">
+                <h1>Contato</h1>
+                <section class="container-contato">
+                    <div class="contato">
+                    <div class="div-logo">
+                        <img src="../assets/favicon.png" alt="logotipo" />
+                        <span>Codezeck</span>
+                    </div>
+                    <p>
+                        Obrigado por ter vindo até aqui! Espero que tenha gostado do
+                        conteúdo. Abaixo estão minhas redes sociais para você acompanhar
+                        mais novidades. Para entrar em contato, você pode me mandar um
+                        e-mail pelo formulário ao lado.
+                    </p>
+                    <div class="links-redes">
+                        <span
+                        ><a
+                            href="https://www.linkedin.com/in/codezeck/"
+                            target="_blank"
+                            ><img
+                            src="../assets/logo-linkedin.png"
+                            alt="logo-linkedin" /></a
+                        ></span>
+                        <span
+                        ><a
+                            href="mailto:ezequieldasilvamanco18@gmail.com"
+                            target="_blank"
+                            ><img src="../assets/logo-email.png" alt="logo-email" /></a
+                        ></span>
+                        <span
+                        ><a href="https://github.com/codezeck" target="_blank"
+                            ><img
+                            src="../assets/logo-github.png"
+                            alt="logo-github" /></a
+                        ></span>
+                    </div>
+                    <section class="formulário">
+                    <form action="mailto:seu-email@exemplo.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="E-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="assunto" name="assunto" placeholder="Assunto" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                    </section>
+                </section>
+            </section>
+        </div>
+      </section>
+    </section>
+    <script src="src/javascript/navigation.js"></script>
+  </body>
+</html>
