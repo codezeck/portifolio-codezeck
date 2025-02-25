@@ -176,6 +176,7 @@
 
     .container-conteudo button {
         width: 100%;
+        max-width: 100px;
         padding: 10px;
     }
 
