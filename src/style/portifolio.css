@@ -99,9 +99,22 @@
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 480px) {
+    .portifolio {
+        width: 100%;
+        margin: auto;
+    }
+
     .container-portifolio .container-projetos {
         grid-template-columns: 1fr;
         grid-gap: 15px;
+        margin: 25px auto 0;
+    }
+
+    .container-portifolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
     }
 
     .container-portifolio h1 {
@@ -114,7 +127,7 @@
     }
 
     .container-projetos div {
-        max-width: 100%;
+        max-width: 57%;
         height: auto;
     }
 
@@ -125,4 +138,23 @@
     .container-projetos .projeto-bloqueado a img {
         display: none;
     }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .container-projetos div {
+        display: flex;
+        width: 70%;
+        max-width: 300px;
+        height: 200px;
+        margin: 0px auto;
+        transition: all 0.3s ease 0s;
+    }
+
+    .container-portifolio .container-projetos {
+        width: 95%;
+        margin: 20px auto 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0px;
+    }
+
 }

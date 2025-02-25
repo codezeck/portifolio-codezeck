@@ -128,7 +128,7 @@
 
     .container-conteudo h1 {
         font-size: 1.8em;
-        margin: 40px auto;
+        margin: 0px auto 40px auto;
     }
 
     .container-conteudo p {
@@ -143,23 +143,23 @@
 /* Estilos para dispositivos móveis */
 @media (max-width: 480px) {
     .about-me {
-        margin: 105px auto auto auto;
+        margin: 80px auto auto auto;
         flex-direction: column;
     }
 
     .about-me .container-foto, .about-me .container-conteudo {
         width: 100%;
-        margin: 0px 0px 60px 0px;
+        margin: 0px 0px 40px 0px;
         text-align: center;
     }
 
     .container-foto .foto {
-        width: 160px;
-        height: 168px;
+        width: 145px;
+        height: 146px;
     }
 
     .container-foto .foto img {
-        width: 170px;
+        width: 150px;
         margin: -20px 0 0 0;
         transform: translate(14px, 2px);
     }
@@ -167,7 +167,7 @@
     .container-conteudo h1 {
         font-size: 1.8em;
         margin: auto;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
 
     .container-conteudo p {
@@ -186,8 +186,14 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px){
-    .about-me{
+    .about-me {
+        display: flex;
         flex-direction: column;
+        width: 100%;
+        margin: 100px auto auto auto;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
     }
 
     .about-me .container-conteudo{

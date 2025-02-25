@@ -135,10 +135,12 @@ body {
         height: 100vh;
         background-attachment: scroll;
     }
-    
-    .home{
+
+    .home {
+        display: flex;
         width: 90%;
-        flex-direction: column;
+        margin: 17px auto 60px auto;
+        flex-direction: column-reverse;
     }
 
     .home .main {
@@ -171,6 +173,13 @@ body {
         background-attachment: scroll;
     }
 
+    .home {
+        display: flex;
+        width: 90%;
+        margin: 17px auto 60px auto;
+        flex-direction: column-reverse;
+    }
+
     .home .main {
         display: flex;
         width: 100%;
@@ -190,6 +199,11 @@ body {
         font-size: 1rem;
     }
 
+    .img-avatar img {
+        width: 90%;
+        max-width: 530px;
+    }
+
     .img-avatar .sombra {
         width: 150px;
     }
@@ -200,7 +214,7 @@ body {
     }
 
     .home .main button {
-        width: 100%;
+        width: 45%;
         padding: 10px;
     }
 
@@ -212,8 +226,8 @@ body {
 @media (max-width: 1118px){
     .home {
         display: flex;
-        width: 80%;
-        margin: 75px auto 60px auto;
+        width: 90%;
+        margin: 17px auto 60px auto;
         flex-direction: column-reverse;
     }
 

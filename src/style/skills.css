@@ -105,11 +105,16 @@
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 480px) {
+    .habilidades {
+        margin: 0px auto 0px auto;
+        justify-content: center;
+    }
+    
     .grid-skills {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        gap: 64px 0px;
-        margin: 20px 10px 0px 0px;
+        gap: 49px 0px;
+        margin: 5px 10px 0px 0px;
     }
 
     .grid-skills div {
