@@ -1,7 +1,6 @@
 /* função botão mobile */
 
 function btnMenu() {
-    console.log('clicou')
     const nav = document.querySelector('.tab-buttons');
     if (nav.classList.contains('hidden')) {
         nav.classList.remove('hidden');
@@ -9,6 +8,17 @@ function btnMenu() {
         nav.classList.add('hidden');
     }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const button = document.querySelector('.tab-buttons');
+
+    button.addEventListener('click', (event) => {
+        if (event.target === button || button.contains(event.target)) {
+            button.classList.toggle('hidden');
+        }
+    });
+});
+
 
 /* função navegação */
 

@@ -167,8 +167,9 @@ body {
         height: 50px;
     }
 
-    .hidden{
-        display: none;
+    .hidden {
+        visibility: hidden;
+        pointer-events: none;
     }
 }
 
