@@ -83,6 +83,11 @@
     cursor: pointer;
     transition: 0.3s;
     border: #00EEFF;
+    transition: 0.3s;
+}
+
+.container-conteudo button:hover{
+    transform: scale(1.2);
 }
 
 #home .main button a {
@@ -174,7 +179,7 @@
 @media (max-width: 560px){
     #home .main h2 strong {
         color: var(--cor-azul);
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }
 

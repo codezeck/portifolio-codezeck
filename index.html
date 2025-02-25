@@ -14,12 +14,12 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/style/navigation.css" />
     <link rel="stylesheet" href="src/style/home.css">
     <link rel="stylesheet" href="src/style/about-me.css">
     <link rel="stylesheet" href="src/style/skills.css">
     <link rel="stylesheet" href="src/style/portifolio.css">
     <link rel="stylesheet" href="src/style/contato.css">
+    <link rel="stylesheet" href="src/style/navigation.css" />
     <title>Codezeck</title>
   </head>
   <body>
@@ -33,19 +33,19 @@
         </div>
         <button id="menu-toggle"><img src="src/assets/menu.png" alt="botão-menu" onclick="btnMenu()"></button>
         <div class="tab-buttons hidden">
-          <button class="home-btn" content-id="home">
+          <button class="home-btn tab-btn active" content-id="home">
             Home
             </button>
-          <button class="sobre-mim-btn" content-id="sobre-mim">
+          <button class="sobre-mim-btn tab-btn" content-id="about-me">
             Sobre mim
           </button>
-          <button class="habilidades-btn" content-id="habilidades">
+          <button class="habilidades-btn tab-btn" content-id="habilidades">
             Habilidades
           </button>
-          <button class="hortifolio-btn" content-id="portifolio">
+          <button class="hortifolio-btn tab-btn" content-id="portifolio">
             Portifólio
           </button>
-          <button class="contato-btn" content-id="contato">
+          <button class="contato-btn tab-btn" content-id="contato">
             Contato
         </button>
         </div>
@@ -54,7 +54,7 @@
 
         <!-- sessão home -->
 
-        <div id="home">
+        <div id="home" class="content hidden">
           <div class="main">
             <h1>EZEQUIEL SILVA</h1>
             <h2><strong>Desenvolvedor Front-end</strong></h2>
@@ -98,7 +98,7 @@
 
         <!-- sessão sobre mim -->
 
-        <div id="about-me">
+        <div id="about-me" class="content hidden">
             <div class="container-foto">
               <section class="foto">
                 <img src="src/assets/selfie.jpg" alt="minha-foto" />
@@ -130,7 +130,7 @@
 
         <!-- sessão skills -->
 
-        <div id="habilidades">
+        <div id="habilidades" class="content hidden">
             <section class="grid-container">
                 <h1>Habilidades</h1>
                 <p><strong>Aqui estão minhas competências:</strong> As que têm um ponto de interrogação ainda não foram desbloqueadas. Estou constantemente evoluindo e aprimorando minhas habilidades para oferecer o melhor suporte possível.</p>
@@ -216,7 +216,7 @@
         
         <!-- sessão portifólio -->
 
-        <div id="portifolio">
+        <div id="portifolio" class="content hidden">
             <section class="container-portifolio">
                 <h1>Portifólio</h1>
                 <p>Aqui estão alguns dos meus trabalhos. Abaixo, você encontrará o link de cada projeto. Ao passar o mouse sobre um projeto, aparecerá uma breve descrição sobre ele. Se clicar no projeto, você será direcionado para o respectivo site.</p>
@@ -257,7 +257,7 @@
 
         <!-- sessão contato -->
 
-        <div id="contato">
+        <div id="contato" class="content hidden">
           <h1>Contato</h1>
           <section class="container-contato">
             <div class="contato">
@@ -297,10 +297,10 @@
               <section class="formulário">
                 <form action="mailto:seu-email@exemplo.com" method="post" enctype="text/plain">
                     <div class="form-group">
-                        <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                        <input type="text" id="nome" name="nome" placeholder="Nome" autocomplete="name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="E-mail" required>
+                        <input type="email" id="email" name="email" placeholder="E-mail" autocomplete="email" required>
                     </div>
                     <div class="form-group">
                         <input type="text" id="assunto" name="assunto" placeholder="Assunto" required>

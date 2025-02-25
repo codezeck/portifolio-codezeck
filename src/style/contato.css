@@ -137,10 +137,6 @@ textarea:valid {
     outline: none !important;
 }
 
-#about-me, #home, #habilidades , #portifolio{
-    display: none;
-}
-
 /* Estilos para tablets */
 @media (max-width: 768px) {
     .container-contato {
