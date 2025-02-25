@@ -12,43 +12,39 @@ function btnMenu() {
 
 /* função navegação */
 
-// Função para alternar a visibilidade do menu
-function btnMenu() {
-    const nav = document.querySelector('.tab-buttons');
-    nav.classList.toggle('hidden');
-}
-
-// Função para lidar com cliques nas abas de navegação
-const tabs = document.querySelectorAll('.tab-btn');
-tabs.forEach(tab => tab.addEventListener('click', () => tabClicked(tab)));
-
-const tabClicked = (tab) => {
-    tabs.forEach(tab => tab.removeAttribute('id'));
-    tab.id = 'active';
-
-    const contents = document.querySelectorAll('.content');
-    contents.forEach(content => {
-        content.classList.remove('show');
-        content.classList.add('hidden');
+function setActive(button) {
+    // Remove a classe 'active' de todos os botões
+    const buttons = document.querySelectorAll('.tab-btn');
+    buttons.forEach(btn => {
+      btn.classList.remove('active');
     });
 
-    const contentId = tab.getAttribute('content-id');
-    const content = document.getElementById(contentId);
-    
-    if (content) {
-        content.classList.remove('hidden');
-        content.classList.add('show');
-    } else {
-        console.error(`Elemento com content-id "${contentId}" não encontrado.`);
+    // Adiciona a classe 'active' ao botão clicado
+    button.classList.add('active');
+
+    // Esconde todos os conteúdos
+    const contents = document.querySelectorAll('.hidden-content');
+    contents.forEach(content => {
+      content.style.display = 'none';
+    });
+
+    // Mostra o conteúdo correspondente ao botão clicado
+    const contentId = button.getAttribute('content-id');
+    const contentDiv = document.getElementById(contentId);
+    if (contentDiv) {
+      contentDiv.style.display = 'flex';
     }
+  }
 
-    console.log(content);
-};
+  // Adiciona o evento de clique a todos os botões com a classe 'tab-btn'
+  document.querySelectorAll('.tab-btn').forEach(button => {
+    button.addEventListener('click', function() {
+      setActive(this);
+    });
+  });
 
-const currentActiveTab = document.querySelector('.tab-btn#active');
-if (currentActiveTab) {
-    tabClicked(currentActiveTab);
-}
+  // Mostra o conteúdo 'Home' por padrão
+  document.getElementById('home').style.display = 'flex';
 
 
 

@@ -33,19 +33,19 @@
         </div>
         <button id="menu-toggle"><img src="src/assets/menu.png" alt="botão-menu" onclick="btnMenu()"></button>
         <div class="tab-buttons hidden">
-          <button class="home-btn tab-btn active" content-id="home">
+          <button class="home-btn tab-btn" content-id="home" onclick="setActive(this)">
             Home
             </button>
-          <button class="sobre-mim-btn tab-btn" content-id="about-me">
+          <button class="sobre-mim-btn tab-btn" content-id="about-me" onclick="setActive(this)">
             Sobre mim
           </button>
-          <button class="habilidades-btn tab-btn" content-id="habilidades">
+          <button class="habilidades-btn tab-btn" content-id="habilidades" onclick="setActive(this)">
             Habilidades
           </button>
-          <button class="hortifolio-btn tab-btn" content-id="portifolio">
+          <button class="hortifolio-btn tab-btn" content-id="portifolio" onclick="setActive(this)">
             Portifólio
           </button>
-          <button class="contato-btn tab-btn" content-id="contato">
+          <button class="contato-btn tab-btn" content-id="contato" onclick="setActive(this)">
             Contato
         </button>
         </div>
@@ -54,7 +54,7 @@
 
         <!-- sessão home -->
 
-        <div id="home" class="content hidden">
+        <div id="home" class="home hidden-content">
           <div class="main">
             <h1>EZEQUIEL SILVA</h1>
             <h2><strong>Desenvolvedor Front-end</strong></h2>
@@ -98,7 +98,7 @@
 
         <!-- sessão sobre mim -->
 
-        <div id="about-me" class="content hidden">
+        <div id="about-me" class="about-me hidden-content">
             <div class="container-foto">
               <section class="foto">
                 <img src="src/assets/selfie.jpg" alt="minha-foto" />
@@ -130,7 +130,7 @@
 
         <!-- sessão skills -->
 
-        <div id="habilidades" class="content hidden">
+        <div id="habilidades" class="habilidades hidden-content">
             <section class="grid-container">
                 <h1>Habilidades</h1>
                 <p><strong>Aqui estão minhas competências:</strong> As que têm um ponto de interrogação ainda não foram desbloqueadas. Estou constantemente evoluindo e aprimorando minhas habilidades para oferecer o melhor suporte possível.</p>
@@ -216,22 +216,22 @@
         
         <!-- sessão portifólio -->
 
-        <div id="portifolio" class="content hidden">
+        <div id="portifolio" class="portifolio hidden-content">
             <section class="container-portifolio">
                 <h1>Portifólio</h1>
                 <p>Aqui estão alguns dos meus trabalhos. Abaixo, você encontrará o link de cada projeto. Ao passar o mouse sobre um projeto, aparecerá uma breve descrição sobre ele. Se clicar no projeto, você será direcionado para o respectivo site.</p>
                 <section class="container-projetos">
-                  <div class="projeto-1 desbloqueado" title="O projeto Menu Restaurante é uma plataforma online onde os clientes podem explorar o cardápio do restaurante e realizar pedidos diretamente pelo site. Após finalizar o pedido, o cliente é automaticamente redirecionado para o WhatsApp, onde pode concluir a solicitação. Além disso, o site possui um sistema que exibe o horário de funcionamento do restaurante, permitindo que pedidos sejam feitos apenas dentro do horário de atendimento.">
+                  <div class="projeto-1 desbloqueado anime" title="O projeto Menu Restaurante é uma plataforma online onde os clientes podem explorar o cardápio do restaurante e realizar pedidos diretamente pelo site. Após finalizar o pedido, o cliente é automaticamente redirecionado para o WhatsApp, onde pode concluir a solicitação. Além disso, o site possui um sistema que exibe o horário de funcionamento do restaurante, permitindo que pedidos sejam feitos apenas dentro do horário de atendimento.">
                     <a href="https://restaurant-menu-rouge-ten.vercel.app" target="_blank">
                       <img src="src/assets/img-sites/menu-restaurante.png" alt="ilustração projeto restaurante menu">
                     </a>
                   </div>
-                  <div class="projeto-2 desbloqueado" title="O site Site Android descreve a história do logo do Android e como surgiram os nomes das versões do sistema operacional. Além disso, o site fala sobre a criadora dos nomes das versões, destacando as curiosidades e o processo criativo por trás de cada nome.">
+                  <div class="projeto-2 desbloqueado anime" title="O site Site Android descreve a história do logo do Android e como surgiram os nomes das versões do sistema operacional. Além disso, o site fala sobre a criadora dos nomes das versões, destacando as curiosidades e o processo criativo por trás de cada nome.">
                     <a href="https://codezeck.github.io/site-android/" target="_blank">
                       <img src="src/assets/img-sites/site-android.png" alt="ilustração projeto site Android">
                     </a>
                   </div>
-                  <div class="projeto-3 desbloqueado" title="O projeto é uma cópia funcional do Spotify, com uma interface de usuário atrativa e responsiva. Inclui a função de pesquisa de músicas através de uma API personalizada, proporcionando uma experiência de usuário dinâmica e interativa. O resultado é uma plataforma completa e funcional de streaming de música.">
+                  <div class="projeto-3 desbloqueado anime" title="O projeto é uma cópia funcional do Spotify, com uma interface de usuário atrativa e responsiva. Inclui a função de pesquisa de músicas através de uma API personalizada, proporcionando uma experiência de usuário dinâmica e interativa. O resultado é uma plataforma completa e funcional de streaming de música.">
                     <a href="https://codezeck.github.io/Clone-spotfy/" target="_blank">
                       <img src="src/assets/img-sites/clone-spotify.png" alt="ilustração projeto clone-spotify">
                     </a>
@@ -257,10 +257,10 @@
 
         <!-- sessão contato -->
 
-        <div id="contato" class="content hidden">
+        <div id="contato" class="contato hidden-content">
           <h1>Contato</h1>
           <section class="container-contato">
-            <div class="contato">
+            <div class="info-contato">
               <div class="div-logo">
                 <img src="src/assets/favicon.png" alt="logotipo" />
                 <span>Codezeck</span>

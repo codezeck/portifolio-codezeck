@@ -13,11 +13,12 @@
     font-family: var(--fonte-principal);
 }
 
-#contato{
+.contato{
     margin: 75px auto auto auto;
+    flex-direction: column;
 }
 
-#contato h1{
+.contato h1{
     color: var(--cor-azul);
     font-size: 2em;
     text-align: center;
@@ -27,32 +28,32 @@
     width: 90%;
     display: flex;
     flex-wrap: nowrap;
-    margin: 85px auto 0;
+    margin: 55px auto 0;
 }
 
-.container-contato .contato {
+.container-contato .info-contato {
     width: 100%;
     max-width: 50%;
     text-align: center;
     padding: 10px;
 }
 
-.contato .div-logo {
+.info-contato .div-logo {
     padding: 30px;
 }
 
-.contato .div-logo img {
+.info-contato .div-logo img {
     width: 48px;
     margin-right: 5px;
 }
 
-.contato .div-logo span {
+.info-contato .div-logo span {
     color: white;
     font-size: 30px;
     margin-top: 13px;
 }
 
-.contato p {
+.info-contato p {
     width: 100%;
     max-width: 555px;
     display: flex;
@@ -60,11 +61,11 @@
     margin: auto;
 }
 
-.contato .links-redes {
+.info-contato .links-redes {
     margin-top: 20px;
 }
 
-.contato .links-redes span {
+.info-contato .links-redes span {
     padding: 10px;
 }
 
@@ -112,6 +113,10 @@ input, textarea {
     margin-left: 6px;
 }
 
+.formulário button:hover{
+    transform: scale(1.04);
+}
+
 input::placeholder,
 textarea::placeholder {
     color: white;
@@ -145,27 +150,27 @@ textarea:valid {
         margin: 40px auto 0;
     }
 
-    .container-contato .contato, .container-contato .formulário {
+    .container-contato .info-contato, .container-contato .formulário {
         max-width: 90%;
     }
 
-    #contato{
+    .contato{
         margin: 50px auto auto auto;
     }
 
-    #contato h1 {
+    .contato h1 {
         font-size: 1.8em;
     }
 
-    .contato .div-logo {
+    .info-contato .div-logo {
         display: none;
     }
 
-    .contato .div-logo span {
+    .info-contato .div-logo span {
         font-size: 25px;
     }
 
-    .contato p {
+    .info-contato p {
         font-size: 1rem;
     }
 
@@ -182,23 +187,23 @@ textarea:valid {
         align-items: center;
     }
 
-    .container-contato .contato, .container-contato .formulário {
+    .container-contato .info-contato, .container-contato .formulário {
         max-width: 100%;
     }
 
-    #contato{
+    .contato{
         margin: 50px auto auto auto;
     }
 
-    #contato h1 {
+    .contato h1 {
         font-size: 1.5em;
     }
 
-    .contato .div-logo span {
+    .info-contato .div-logo span {
         font-size: 20px;
     }
 
-    .contato p {
+    .info-contato p {
         font-size: 0.9rem;
     }
 

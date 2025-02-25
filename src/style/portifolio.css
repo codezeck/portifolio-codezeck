@@ -13,7 +13,7 @@
     font-family: var(--fonte-principal);
 }
 
-#portifolio{
+.portifolio{
     width: 80%;
     margin: auto;
 }
@@ -71,6 +71,10 @@
 .container-projetos .projeto-bloqueado a img {
     border: 3.5px dashed rgba(177, 177, 177, 0.086);
     border-radius: 4%;
+}
+
+.anime:hover {
+    transform: scale(1.1);
 }
 
 /* Estilos para tablets */

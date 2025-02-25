@@ -13,34 +13,34 @@
     font-family: var(--fonte-principal);
 }
 
-#home{
+.home{
     display: flex;
     width: 80%;
     margin: 75px auto auto auto;
 }
 
-#home .main{
+.home .main{
     width: 50%;
     margin: auto;
     text-align: center;
 }
 
-#home .main h1{
-    font-size: 3rem;
+.home .main h1{
+    font-size: 2.5rem;
     margin-bottom: 25px;
 }
 
-#home .main h2 {
-    padding: 0 10px;
+.home .main h2 {
+    padding: 0  px;
     margin-bottom: 2px;
 }
 
-#home .main h2 strong {
+.home .main h2 strong {
     color: var(--cor-azul);
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
-#home .main p{
+.home .main p{
     width: 88%;
     padding: 10px;
     line-height: 1.4;
@@ -48,7 +48,7 @@
     margin: auto;
 }
 
-#home section{
+.home section{
     width: 50%;
     display: flex;
     margin: auto;
@@ -67,7 +67,7 @@
     box-shadow: -11px 13px 44px 6px var(--cor-azul);
 }
 
-#home .main .links-redes{
+.home .main .links-redes{
     padding: 10px;
 }
 
@@ -75,7 +75,15 @@
     padding: 5px 10px;
 }
 
-#home .main button {
+.links-redes > span > a > img {
+    transition: 0.3s;
+}
+
+.links-redes > span > a > img:hover {
+    transform: scale(1.2);
+}
+
+.home .main button {
     background-color: var(--cor-azul);
     padding: 12px 20px;
     border-radius: 30px;
@@ -86,11 +94,11 @@
     transition: 0.3s;
 }
 
-.container-conteudo button:hover{
-    transform: scale(1.2);
+.home .main button:hover{
+    transform: scale(1.1);
 }
 
-#home .main button a {
+.home .main button a {
     background-color: var(--cor-azul);
     color: black;
     padding: 12px 20px;
@@ -101,26 +109,26 @@
 }
 
 @media (max-width: 768px) {
-    #home{
+    .home{
         width: 90%;
         flex-direction: column;
     }
 
-    #home .main {
+    .home .main {
         width: 90%;
         margin: auto;
         text-align: center;
     }
 
-    #home .main h1 {
+    .home .main h1 {
         font-size: 7vw;
     }
 
-    #home section {
+    .home section {
         width: 100%;
     }
 
-    #home .main h2 strong {
+    .home .main h2 strong {
         color: var(--cor-azul);
         font-size: 5vw;
     }
@@ -128,7 +136,7 @@
 
 @media (max-width: 480px) {
 
-    #home .main p {
+    .home .main p {
         width: 100%;
         font-size: 1rem;
     }
@@ -137,36 +145,36 @@
         width: 150px;
     }
 
-    #home .main .links-redes {
+    .home .main .links-redes {
         flex-direction: column;
         align-items: center;
     }
 
-    #home .main button {
+    .home .main button {
         width: 100%;
         padding: 10px;
     }
 
-    #home .main button a {
+    .home .main button a {
         padding: 10px;
     }
 }
 
 @media (max-width: 1118px){
-    #home {
+    .home {
         display: flex;
         width: 80%;
         margin: 75px auto 60px auto;
         flex-direction: column-reverse;
     }
 
-    #home .main {
+    .home .main {
         width: 100%;
         margin: auto;
         text-align: center;
     }
 
-    #home section {
+    .home section {
         width: 80%;
         display: flex;
         margin: auto;
@@ -177,7 +185,7 @@
 }
 
 @media (max-width: 560px){
-    #home .main h2 strong {
+    .home .main h2 strong {
         color: var(--cor-azul);
         font-size: 1.3rem;
     }

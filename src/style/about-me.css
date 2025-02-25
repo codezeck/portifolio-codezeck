@@ -13,7 +13,7 @@
     font-family: var(--fonte-principal);
 }
 
-#about-me {
+.about-me {
     display: flex;
     width: 100%;
     margin: 125px auto auto auto;
@@ -22,8 +22,8 @@
     justify-content: space-evenly;
 }
 
-#about-me .container-foto{
-    width: 40%;
+.about-me .container-foto{
+    width: 35%;
     display: flex;
 }
 
@@ -46,7 +46,7 @@
     transform: translate(17px, 3px);
 }
 
-#about-me .container-conteudo{
+.about-me .container-conteudo{
     width: 50%;
     max-width: 600px;
     font-family: var(--fonte-principal);
@@ -85,6 +85,10 @@
     transition: 0.3s;
 }
 
+.container-conteudo button:hover{
+    transform: scale(1.2);
+}
+
 .container-conteudo button a {
     text-decoration: none;
     color: black;
@@ -92,16 +96,16 @@
 
 /* Estilos para tablets */
 @media (max-width: 768px) {
-    #about-me {
+    .about-me {
         flex-direction: column;
         align-items: center;
     }
 
-    #about-me .container-foto, #about-me .container-conteudo {
+    .about-me .container-foto, .about-me .container-conteudo {
         width: 90%;
     }
 
-    #about-me .container-conteudo {
+    .about-me .container-conteudo {
         width: 90%;
         max-width: 600px;
         font-family: var(--fonte-principal);
@@ -138,12 +142,12 @@
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 480px) {
-    #about-me {
+    .about-me {
         margin: 105px auto auto auto;
         flex-direction: column;
     }
 
-    #about-me .container-foto, #about-me .container-conteudo {
+    .about-me .container-foto, .about-me .container-conteudo {
         width: 100%;
         margin: 0px 0px 60px 0px;
         text-align: center;
@@ -181,17 +185,17 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px){
-    #about-me{
+    .about-me{
         flex-direction: column;
     }
 
-    #about-me .container-conteudo{
+    .about-me .container-conteudo{
         width: 70%;
         text-align: center;
         justify-content: center;
     }
 
-    #about-me .container-foto{
+    .about-me .container-foto{
         width: 100%;
     }
 

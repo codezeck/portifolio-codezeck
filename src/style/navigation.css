@@ -116,6 +116,10 @@ body {
     color: var(--cor-azul);
 }
 
+.hidden-content {
+    display: none;
+}
+
 @media (max-width: 768px){
     .container-navigation {
         width: 100%;
@@ -182,16 +186,8 @@ body {
         justify-content: space-between;
     }
 }
-.content {
-    display: none; /* Oculta todos os conteúdos por padrão */
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out; /* Adiciona uma transição suave */
-}
 
-.content.show {
-    display: block; /* Mostra o conteúdo ativo */
-    opacity: 1;
-}
+
 
 
 
