@@ -172,6 +172,10 @@ body {
         transition: 0s;
     }
 
+    .tab-buttons button:hover{
+        transform: scale(1);
+    }
+
     .hidden {
         visibility: hidden;
         pointer-events: none;
@@ -191,6 +195,7 @@ body {
         height: 50px;
         justify-content: space-between;
     }
+
 }
 
 
