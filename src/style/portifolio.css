@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+:root {
+    --fonte-principal: "Montserrat", serif;
+    --fonte-secundaria: Arial, Helvetica, sans-serif;
+    --cor-azul: #00EEFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: var(--fonte-principal);
+}
+
+#portifolio{
+    width: 80%;
+    margin: auto;
+}
+
+.container-portifolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container-portifolio h1 {
+    color: var(--cor-azul);
+    font-size: 2em;
+    padding: 20px;
+}
+
+.container-portifolio p {
+    width: 85%;
+    color: white;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.container-portifolio .container-projetos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin: 50px auto 0;
+}
+
+.container-projetos div {
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+.container-projetos div a {
+    margin: auto;
+}
+
+.container-projetos div img {
+    width: 100%;
+    margin: auto;
+    color: rgb(177, 177, 177);
+    padding: 3px;
+    border-radius: 4%;
+}
+
+.container-projetos .projeto-bloqueado a img {
+    border: 3.5px dashed rgba(177, 177, 177, 0.086);
+    border-radius: 4%;
+}
+
+/* Estilos para tablets */
+@media (max-width: 768px) {
+    .container-portifolio .container-projetos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .container-portifolio h1 {
+        font-size: 1.8em;
+    }
+
+    .container-portifolio p {
+        font-size: 1rem;
+    }
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 480px) {
+    .container-portifolio .container-projetos {
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+
+    .container-portifolio h1 {
+        font-size: 1.5em;
+    }
+
+    .container-portifolio p {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+
+    .container-projetos div {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .container-projetos div img {
+        width: 100%;
+    }
+
+    .container-projetos .projeto-bloqueado a img {
+        display: none;
+    }
+}

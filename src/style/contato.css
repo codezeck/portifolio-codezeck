@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+:root {
+    --fonte-principal: "Montserrat", serif;
+    --fonte-secundaria: Arial, Helvetica, sans-serif;
+    --cor-azul: #00EEFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: var(--fonte-principal);
+}
+
+#contato{
+    margin: 75px auto auto auto;
+}
+
+#contato h1{
+    color: var(--cor-azul);
+    font-size: 2em;
+    text-align: center;
+}
+
+.container-contato {
+    width: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 85px auto 0;
+}
+
+.container-contato .contato {
+    width: 100%;
+    max-width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+.contato .div-logo {
+    padding: 30px;
+}
+
+.contato .div-logo img {
+    width: 48px;
+    margin-right: 5px;
+}
+
+.contato .div-logo span {
+    color: white;
+    font-size: 30px;
+    margin-top: 13px;
+}
+
+.contato p {
+    width: 100%;
+    max-width: 555px;
+    display: flex;
+    color: white;
+    margin: auto;
+}
+
+.contato .links-redes {
+    margin-top: 20px;
+}
+
+.contato .links-redes span {
+    padding: 10px;
+}
+
+.formulário {
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    padding: 10px;
+}
+
+form {
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    padding: 6px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 30px;
+    margin-bottom: 7px;
+}
+
+input, textarea {
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid #cccccc00;
+    border-radius: 30px;
+    background-color: #7e85926b;
+    color: white;
+}
+
+.formulário button {
+    width: 100%;
+    max-width: 440px;
+    padding: 10px 0;
+    background-color: var(--cor-azul);
+    color: black;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 6px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+input:hover,
+textarea:hover {
+    border: 2px solid var(--cor-azul);
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid var(--cor-azul);
+    border-color: var(--cor-azul) !important;
+    outline: none !important;
+}
+
+input:valid,
+textarea:valid {
+    border: 2px solid var(--cor-azul);
+    border-color: var(--cor-azul) !important;
+    outline: none !important;
+}
+
+#about-me, #home, #habilidades , #portifolio{
+    display: none;
+}
+
+/* Estilos para tablets */
+@media (max-width: 768px) {
+    .container-contato {
+        flex-direction: column;
+        align-items: center;
+        margin: 40px auto 0;
+    }
+
+    .container-contato .contato, .container-contato .formulário {
+        max-width: 90%;
+    }
+
+    #contato{
+        margin: 50px auto auto auto;
+    }
+
+    #contato h1 {
+        font-size: 1.8em;
+    }
+
+    .contato .div-logo {
+        display: none;
+    }
+
+    .contato .div-logo span {
+        font-size: 25px;
+    }
+
+    .contato p {
+        font-size: 1rem;
+    }
+
+    .formulário button {
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 480px) {
+    .container-contato {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-contato .contato, .container-contato .formulário {
+        max-width: 100%;
+    }
+
+    #contato{
+        margin: 50px auto auto auto;
+    }
+
+    #contato h1 {
+        font-size: 1.5em;
+    }
+
+    .contato .div-logo span {
+        font-size: 20px;
+    }
+
+    .contato p {
+        font-size: 0.9rem;
+    }
+
+    .formulário button {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
