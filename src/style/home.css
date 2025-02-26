@@ -142,7 +142,7 @@ body {
     .home {
         display: flex;
         width: 90%;
-        margin: 17px auto 60px auto;
+        margin: 17px auto 0px auto;
         flex-direction: column-reverse;
     }
 
@@ -186,7 +186,7 @@ body {
     .home {
         display: flex;
         width: 90%;
-        margin: 17px auto 60px auto;
+        margin: 17px auto 0px auto;
         flex-direction: column-reverse;
     }
 

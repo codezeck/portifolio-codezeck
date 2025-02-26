@@ -83,6 +83,7 @@
     margin: 22px 0;
     cursor: pointer;
     transition: 0.3s;
+    border: none;
 }
 
 .container-conteudo button:hover{
