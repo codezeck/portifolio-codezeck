@@ -102,6 +102,22 @@
     display: none;
 }
 
+@media (max-width: 1023px){
+    .container-navigation {
+        width: 98%;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .tab-buttons {
+        width: 65%;
+        justify-content: space-between;
+    }
+
+}
+
 @media (max-width: 768px){
     body {
         background: url('../assets/fundo2.png') center center / cover no-repeat;
@@ -172,22 +188,6 @@
         visibility: hidden;
         pointer-events: none;
     }
-}
-
-@media (min-width: 768px) and (max-width: 1023px){
-    .container-navigation {
-        width: 98%;
-        display: flex;
-        margin: auto;
-        justify-content: space-between;
-        flex-direction: row;
-    }
-
-    .tab-buttons {
-        width: 65%;
-        justify-content: space-between;
-    }
-
 }
 
 

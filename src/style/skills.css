@@ -85,7 +85,6 @@
     border-radius: 25%;
 }
 
-/* Estilos para tablets */
 @media (max-width: 768px) {
     .grid-skills {
         display: grid;
@@ -103,7 +102,6 @@
     }
 }
 
-/* Estilos para dispositivos móveis */
 @media (max-width: 480px) {
     .habilidades {
         margin: 0px auto 0px auto;
