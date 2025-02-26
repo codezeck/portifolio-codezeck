@@ -21,7 +21,7 @@ html, body {
 }
 
 body {
-    background: url('../assets/fundo2.png') center center / cover no-repeat fixed;
+    background: url('../assets/fundo2.png') center center / cover no-repeat scroll;
     background-color: rgba(0, 0, 255, 0.37);
     position: relative;
     width: 100%;
@@ -132,7 +132,7 @@ body {
     }
     
     body {
-        background: url('../assets/fundo2.png') center center / cover no-repeat fixed;
+        background: url('../assets/fundo2.png') center center / cover no-repeat scroll;
         background-color: rgba(0, 0, 255, 0.37);
         position: relative;
         width: 100%;
@@ -175,7 +175,7 @@ body {
     }
     
     body {
-        background: url('../assets/fundo2.png') center center / cover no-repeat fixed;
+        background: url('../assets/fundo2.png') center center / cover no-repeat scroll;
         background-color: rgba(0, 0, 255, 0.37);
         position: relative;
         width: 100%;
