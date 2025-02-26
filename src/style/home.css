@@ -22,7 +22,7 @@ html, body {
 
 body {
     background: url('../assets/fundo2.png') center center / cover no-repeat scroll;
-    background-color: rgba(0, 0, 255, 0.37);
+    background-attachment: fixed;
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -133,7 +133,7 @@ body {
     
     body {
         background: url('../assets/fundo2.png') center center / cover no-repeat scroll;
-        background-color: rgba(0, 0, 255, 0.37);
+        background-attachment: fixed;
         position: relative;
         width: 100%;
         min-height: 100vh;
@@ -176,11 +176,12 @@ body {
     
     body {
         background: url('../assets/fundo2.png') center center / cover no-repeat scroll;
-        background-color: rgba(0, 0, 255, 0.37);
+        background-attachment: fixed;
         position: relative;
         width: 100%;
         min-height: 100vh;
     }
+    
  
     .home {
         display: flex;
