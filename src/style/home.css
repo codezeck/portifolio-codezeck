@@ -14,21 +14,18 @@
 }
 
 html, body {
+    margin: 0;
+    padding: 0;
     height: 100%;
-    overflow: auto; /* Permite a rolagem do conteúdo */
-    overflow-x: hidden;
+    overflow: auto;
 }
 
 body {
-    background: url('../assets/fundo2.png') center center / cover no-repeat;
+    background: url('../assets/fundo2.png') center center / cover no-repeat fixed;
     background-color: rgba(0, 0, 255, 0.37);
-    position: absolute;
-    top: 0%;
-    left: 0%;
+    position: relative;
     width: 100%;
-    height: 100vh;
-    z-index: -1;
-    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 .home{
@@ -128,16 +125,18 @@ body {
 
 @media (max-width: 768px) {
     html, body {
-        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: auto;
     }
     
     body {
-        background: url('../assets/fundo2.png') center center / cover no-repeat;
+        background: url('../assets/fundo2.png') center center / cover no-repeat fixed;
         background-color: rgba(0, 0, 255, 0.37);
         position: relative;
         width: 100%;
-        height: 100vh;
-        background-attachment: scroll;
+        min-height: 100vh;
     }
 
     .home {
@@ -169,18 +168,20 @@ body {
 
 @media (max-width: 480px) {
     html, body {
-        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: auto;
     }
-
+    
     body {
-        background: url('../assets/fundo2.png') center center / cover no-repeat;
+        background: url('../assets/fundo2.png') center center / cover no-repeat fixed;
         background-color: rgba(0, 0, 255, 0.37);
         position: relative;
         width: 100%;
-        height: 100vh;
-        background-attachment: scroll;
+        min-height: 100vh;
     }
-
+ 
     .home {
         display: flex;
         width: 90%;
@@ -264,6 +265,13 @@ body {
     .home .main h2 strong {
         color: var(--cor-azul);
         font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 360px){
+    .home .main button {
+        width: 70%;
+        padding: 10px;
     }
 }
 
