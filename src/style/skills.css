@@ -85,6 +85,16 @@
     border-radius: 25%;
 }
 
+@media (min-width: 1920px){
+    .contents {
+        width: 90%;
+        height: 90vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+}
+
 @media (max-width: 768px) {
     .grid-skills {
         display: grid;

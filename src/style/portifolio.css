@@ -77,6 +77,12 @@
     transform: scale(1.1);
 }
 
+@media (min-width: 1920px){
+    .portifolio{
+        justify-content: center;
+    }
+}
+
 @media (max-width: 1023px){
     .container-projetos div {
         display: flex;

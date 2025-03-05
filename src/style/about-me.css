@@ -95,6 +95,29 @@
     color: black;
 }
 
+@media (min-width: 1920px){
+    .about-me{
+        display: flex;
+        width: 96%;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        height: 92dvh;
+        margin: 0px;
+    }
+
+    .about-me .container-foto {
+        width: 32%;
+        display: flex;
+    }
+
+    .about-me .container-conteudo{
+        margin: 30px 40px 20px 0px;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 1023px){
     .about-me {
         display: flex;

@@ -142,6 +142,27 @@ textarea:valid {
     outline: none !important;
 }
 
+@media (min-width: 1920px){
+    .contato{
+        justify-content: center;
+        margin: auto;
+    }
+
+    .container-contato {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 82px auto 0;
+    }
+
+    .formulário {
+        width: 100%;
+        max-width: 50%;
+        display: flex;
+        margin: 0px 0px 0px 50px;
+    }
+}
+
 @media (max-width: 768px) {
     .container-contato {
         flex-direction: column;
